@@ -10,9 +10,12 @@
 ### DPS/DAS/PAS 설명
 - https://m.blog.naver.com/jackshin01/221039015878
 
-### DC/TC/직납/크로스도킹
+### 납입경로(발주경로): DC/TC/직납/크로스도킹
+
+- 직납: 본부 또는 점포에서 발주 후 협력회사에서 해당 점포에 바로 납품
 - WMS(Warehouse Management System, 창고관리시스템)  중 물류배송 형태에 따른 명칭이다.
 - DC(Distribution Center) - 보관형 물류 기능으로 물류센터 내에서 제품을 보관하다가 발주시 점포로 점출하는 형태
+- DC는 DC Reorder와 DC Repeat 과정으로 나뉜다.
 - TC(Transport Center) - 통과형 물류 기능으로 물류센터 납품시 점포별 발주량에 대해 점별로 따로 검수 및 매입을 거치는 물류 형태
 - DC/TC관련 기사: 1위 이마트 놔두고... 공정위, 'DC물류' 많은 롯데마트 먼저 칼댔다(190123_시장경제) (http://www.meconomynews.com/news/articleView.html?idxno=19946)
 - DC/TC/크로스도킹 간단설명(https://linked2ev.github.io/ecommerce/2019/02/13/Ecommerce-news_20190213/)
