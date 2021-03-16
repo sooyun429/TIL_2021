@@ -1,30 +1,31 @@
 ## [SQL_Oracle] PRACTICE
 
-
-
 ### | [JOIN](https://goddaehee.tistory.com/62)
 
+- https://www.hackerrank.com/challenges/challenges/problem?h_r=next-challenge&h_v=zen
 ```sql
--- https://www.hackerrank.com/challenges/challenges/problem?h_r=next-challenge&h_v=zen
 
 SELECT A.HACKER_ID, A.NAME, B.CHALLENGES_CREATED FROM HACKERS A, (SELECT COUNT(HACKER_ID) CHALLENGES_CREATED, HACKER_ID FROM CHALLENGES GROUP BY HACKER_ID) B
 WHERE A.HACKER_ID = B.HACKER_ID
 ORDER BY B.CHALLENGES_CREATED DESC, A.HACKER_ID;
+```
 
--- https://www.hackerrank.com/challenges/asian-population/problem
-
+- https://www.hackerrank.com/challenges/asian-population/problem
+```sql
 SELECT SUM(A.POPULATION) FROM CITY A, COUNTRY B
  WHERE A.COUNTRYCODE = B.CODE
    AND B.CONTINENT = 'Asia';
+```
 
--- https://www.hackerrank.com/challenges/african-cities/problem
-
+- https://www.hackerrank.com/challenges/african-cities/problem
+```sql
 SELECT A.NAME FROM CITY A, COUNTRY B
  WHERE A.COUNTRYCODE = B.CODE
    AND B.CONTINENT = 'Africa';
-   
--- https://www.hackerrank.com/challenges/full-score/problem
+```
 
+- https://www.hackerrank.com/challenges/full-score/problem
+```sql
 SELECT TEMP.hacker_id, TEMP.name FROM (
     SELECT A.hacker_id hacker_id, A.name name, COUNT(A.name) cnt
       FROM Hackers A, Difficulty B, Challenges C, Submissions D
@@ -40,9 +41,8 @@ SELECT TEMP.hacker_id, TEMP.name FROM (
 
 ### | [CASE...WHEN...](https://aljjabaegi.tistory.com/15)
 
+- https://www.hackerrank.com/challenges/what-type-of-triangle/problem
 ```sql
--- https://www.hackerrank.com/challenges/what-type-of-triangle/problem
-
 SELECT CASE WHEN A+B > C and (A=B and B=C and C=A) THEN 'Equilateral'
             WHEN A+B > C and (A=B or B=C or C=A) THEN 'Isosceles'
             WHEN A+B > C THEN 'Scalene'
@@ -53,9 +53,8 @@ FROM TRIANGLES;
 
 ### | CEIL, AVG, TO_NUMBER, TO_CHAR, REPLACE
 
+- https://www.hackerrank.com/challenges/the-blunder/problem
 ```sql
--- https://www.hackerrank.com/challenges/the-blunder/problem
-
 SELECT CEIL(AVG(A.SALARY)-AVG(B.SALARY))
   FROM EMPLOYEES A, (
        SELECT TO_NUMBER(REPLACE(TO_CHAR(SALARY), '0', '')) SALARY
@@ -74,9 +73,8 @@ SELECT ROUND(((SELECT AVG(SALARY) FROM EMPLOYEES) - (SELECT AVG(T_SAL) FROM (SEL
 
 ### | COUNT, GROUP BY, ORDER BY, DESC, ROWNUM
 
-```SQL
--- https://www.hackerrank.com/challenges/earnings-of-employees/problem
-
+- https://www.hackerrank.com/challenges/earnings-of-employees/problem
+```sql
 SELECT * FROM (SELECT MONTHS*SALARY, 
                       COUNT(MONTHS*SALARY)
                  FROM EMPLOYEE
@@ -87,24 +85,23 @@ SELECT * FROM (SELECT MONTHS*SALARY,
 
 ### | POWER, SQRT
 
+- https://www.hackerrank.com/challenges/weather-observation-station-18/problem
 ```SQL
--- https://www.hackerrank.com/challenges/weather-observation-station-18/problem
-
 -- MANHATTAN DISTANCE: The distance between two points measured along axes at right angles. In a plane with p1 at (x1, y1) and p2 at (x2, y2), it is |x1 - x2| + |y1 - y2|.
 
 SELECT ROUND(MAX(LAT_N)-MIN(LAT_N)+MAX(LONG_W)-MIN(LONG_W), 4) FROM STATION;
+```
+- https://www.hackerrank.com/challenges/weather-observation-station-19/problem
 
--- https://www.hackerrank.com/challenges/weather-observation-station-19/problem
-
--- https://coding-factory.tistory.com/436
+- https://coding-factory.tistory.com/436
+```sql
 SELECT ROUND(SQRT(POWER(MAX(LAT_N)-MIN(LAT_N), 2) + POWER(MAX(LONG_W)-MIN(LONG_W), 2)), 4) FROM STATION;
 ```
 
 ### | TRUNC, AVG, JOIN, GROUP BY
 
+- https://www.hackerrank.com/challenges/average-population-of-each-continent/problem
 ```SQL
--- https://www.hackerrank.com/challenges/average-population-of-each-continent/problem
-
 SELECT A.CONTINENT, TRUNC(AVG(B.POPULATION), 0) FROM COUNTRY A, CITY B
  WHERE A.CODE = B.COUNTRYCODE
 GROUP BY A.CONTINENT;
@@ -112,9 +109,8 @@ GROUP BY A.CONTINENT;
 
 ### | CASE...WHEN..., BETWEEN...AND...
 
+- https://www.hackerrank.com/challenges/the-report/problem
 ```SQL
--- https://www.hackerrank.com/challenges/the-report/problem
-
 SELECT CASE WHEN B.GRADE >= 8 THEN A.NAME
             ELSE 'NULL'
         END, B.GRADE, A.MARKS FROM STUDENTS A, GRADES B
@@ -124,9 +120,8 @@ ORDER BY B.GRADE DESC, A.NAME ASC;
 
 ### | JOIN, GROUP BY
 
+- https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
 ```SQL
--- https://www.hackerrank.com/challenges/harry-potter-and-wands/problem
-
 SELECT A.id, B.age, A.coins_needed, A.power
   FROM WANDS A, WANDS_PROPERTY B
  WHERE A.code = B.code
