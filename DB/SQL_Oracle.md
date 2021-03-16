@@ -1,6 +1,32 @@
 ## SQL_Oracle
 
-### | 연산자
+### | DB작성 기본
+```sql
+-- DB Object
+
+-- 테이블 조회
+select * from all_tables
+where owner = 'TSTAPOWNER'
+and table_name like 'MT%'
+
+-- object 조회
+select * from all_objects
+where owner = 'DEVAPOWNER'
+and object_type = 'FUNCTION'
+
+-- select insert(컬럼의 갯수가 동일하지 않으면 에러 남)
+insert into a (id, pwd)
+select (id, pwd) from b;
+
+--db objects vaild
+select distinct name from all_source
+where text like '%키워드%'
+
+-- view 조회
+select * from all_views;
+```
+
+### | 연산자 및 함수
 
 #### [LIKE]
 
@@ -9,8 +35,6 @@
 - LIKE 연산자는 대소문자를 구분 한다.
 - UPPER() 함수를 이용해 대소문자 구분없이 출력 할 수 있다.
   (인덱스 성능문제 발생, 함수기반 인덱스 사용)
-  
-### | 함수
 
 #### [[DECODE](https://gent.tistory.com/227)]
 
@@ -57,3 +81,8 @@
   - 잘라 버릴 TABLE과 관련된 구조(CONSTRAINT, TRIGGER 등)과 권한에 영향을 주지 않는다.  
   - TABLE에서 ROW를 삭제하면 해당 TABLE에 걸려 있는 TRIGGER는 실행되지 않는다.
   - AUDIT 기능이 ENABLE되어 있으면, TRUNCATE 명령문은 DELETE 문에 해당하는 AUDIT 정보를 생성하지 않는다. 대신 발생한 TRUNCATE 명령문에 대한 단일 AUDIT RECORD를 생성한다.
+
+### | 데이터베이스와 데이터웨어하우스의 차이점
+
+- 데이터베이스: 체계적인 데이터 모음로 트랜잭션 처리에 사용된다. 많은 데이터를 저장하며 자주 업데이트 되며 현재 데이터가 들어있다.
+- 데이터웨어하우스: 특수한 유형의 데이터베이스로 쿼리 및 보고에 최적화되어 분석 처리에 사용된다. 데이터베이스의 변경사항을 포함하는 기록 데이터가 들어있다.
