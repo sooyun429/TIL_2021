@@ -18,13 +18,17 @@
 - DECODE 함수는 조건에 따라 데이터를 다른 값이나 컬럼값으로 추출할 수 있다.
 - DECODE 함수 안에 DECODE 함수를 중첩으로 사용할 수 있다.
 
-#### [CASE-WHEN]
+#### [[CASE-WHEN](http://www.gurubee.net/lecture/1028)]
 
 - CASE 함수는 DECODE함수가 제공하지 못하는 비교연산의 단점을 해결할 수 있는 함수이다.
 - DECODE함수에서 비교연산을 수행하기 위해서는 GREATEST, LEAST등의 함수를 사용해야 하지만, CASE함수에서는 조건 연산자를 모두 사용 할 수 있다.
 - CASE함수는 IF.. THEN .. ELSE 구문과 비슷 하다. WHEN절 다음에 여러 조건이 올 수 있다.
 
 #### [[ROUND, TRUNC, CEIL](https://coding-factory.tistory.com/295)]
+
+#### [[OVER](https://javaexpert.tistory.com/503)]
+
+- COUNT(*) OVER(): 전체행 카운트. OVER함수는 ORDER BY, GROUP BY 서브쿼리를 개선하기 위해 나온 함수이다. 
 
 ### | [NULL값 처리](http://www.gurubee.net/lecture/1880)
 
