@@ -26,7 +26,7 @@
 
 #### [[ROUND, TRUNC, CEIL](https://coding-factory.tistory.com/295)]
 
-### | NULL값 처리
+### | [NULL값 처리](http://www.gurubee.net/lecture/1880)
 
 - NVL(column, value): 해당 컬럼이 null인 경우 입력한 value값으로 바꾸어 출력
 
