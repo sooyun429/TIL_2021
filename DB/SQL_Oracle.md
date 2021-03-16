@@ -26,6 +26,17 @@
 
 #### [[ROUND, TRUNC, CEIL](https://coding-factory.tistory.com/295)]
 
+### | NULL값 처리
+
+- NVL(column, value): 해당 컬럼이 null인 경우 입력한 value값으로 바꾸어 출력
+
+- NVL2(column, value1, value2): 해당 컬럼 값이 null이 '아닌' 경우 value1을 반환하고, null인 경우 value2를 반환
+
+- NULLIF(column1, column2): column1과 column2 값이 동일하면 NULL, 그렇지 않으면 column1을 반환
+
+  - CASE WHEN column1 = column2 THEN NULL ELSE column1 END
+
+- COALESCE(column, value1, value2, ...): 해당 컬럼이 NULL 값이 '아니면' 해당 컬럼 값을, NULL 값이면 COALESCE(value1, value2, ...) 값을 반환 (NVL 함수와 비슷하다.)
 
 ### | [DELETE(DML), DROP(DDL), TRUNCATE(DDL) 비교](http://www.gurubee.net/article/1455)
 
