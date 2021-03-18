@@ -7,6 +7,12 @@
 
 ### [OS]
 - [📖 BOOK] [운영체제(공룡책)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185475578&orderClick=LAG&Kc=)
+
+### [LINUX]
+- [🖥 SITE] [VI 명령어 포함](https://nuninaya.tistory.com/158)
+- [🖥 SITE] [DORA-GUIDE](https://dora-guide.com/linux-commands/)
+- [🖥 SITE] [우분투 기준](https://coding-factory.tistory.com/504)
+- [🖥 SITE] [추가링크](https://jhnyang.tistory.com/13)
   
 ### [DB]
 - [🖥 SITE] [Oracle DBA 학습](http://www.gurubee.net/oracle/sql)
