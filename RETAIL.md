@@ -25,6 +25,7 @@
 
 ### DPS/DAS/PAS 설명
 - https://m.blog.naver.com/jackshin01/221039015878
+- [DAS: Digital Assorting System (코텍전자)](http://www.e-kotech.co.kr/sub02_03.php)
 
 ### POG(Plan of Program)란?
 - 플래노그램(Plan-O-Gram)
