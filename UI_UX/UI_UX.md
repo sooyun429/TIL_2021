@@ -16,7 +16,7 @@
 
 ### 210321_롯데마트 무인계산기
 
-![롯데마트 무인계산기](C:\Users\dream\TIL_2021\UI_UX\images\롯데마트 무인계산기.jpg)
+![롯데마트 무인계산기](https://github.com/sooyun429/TIL_2021/blob/master/UI_UX/images/%EB%A1%AF%EB%8D%B0%EB%A7%88%ED%8A%B8%20%EB%AC%B4%EC%9D%B8%EA%B3%84%EC%82%B0%EA%B8%B0.jpg?raw=true)
 
 - 이마트 SCO(Self Checkout Machine)와 같은 무인계산기가 청량리 롯데마트에도 생겨났다. 일대일 대응식의 비교는 어렵겠지만, 롯데마트 무인계산기를 사용해보고 느낀 점을 정리해보려고 한다.
   - 종량제봉투(장바구니) 구매 시 결국 매장 직원이 처리를 돕는 프로세스가 수반된다. 이 부분이 자동화 될 수 있는 방법은 없을지 고민해보면 좋을 것 같다.
