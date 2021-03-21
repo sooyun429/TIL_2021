@@ -5,6 +5,9 @@
 - [📖 BOOK] [e-book] [벨로퍼트와 함께하는 모던 자바스크립트](https://learnjs.vlpt.us/)
 - [🖥 BLOG] 자바스크립트 도서 추천([UZILOG](https://uzihoon.com/post/bf55dc10-7c04-11ea-b9d8-7dab3c809ac6))
 
+### [AWS]
+- [🖥 SITE] [AWS Cloud Practitioner(공인 클라우드 전문가) 자격증](https://github.com/yoonhok524/aws-certifications/tree/master/0.%20Cloud%20Practitioner)
+
 ### [OS]
 - [📖 BOOK] [운영체제(공룡책)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185475578&orderClick=LAG&Kc=)
 
@@ -13,6 +16,9 @@
 - [🖥 SITE] [DORA-GUIDE](https://dora-guide.com/linux-commands/)
 - [🖥 SITE] [우분투 기준](https://coding-factory.tistory.com/504)
 - [🖥 SITE] [추가링크](https://jhnyang.tistory.com/13)
+
+### [Security]
+- [🖥 SITE] [자바 애플리케이션의 보안 검수 방법 살펴보기](https://engineering.linecorp.com/ko/blog/static-analysis-of-java-app/)
   
 ### [DB]
 - [🖥 SITE] [Oracle DBA 학습](http://www.gurubee.net/oracle/sql)
