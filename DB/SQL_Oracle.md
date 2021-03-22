@@ -99,3 +99,21 @@ select * from all_views;
 
 - 데이터베이스: 체계적인 데이터 모음로 트랜잭션 처리에 사용된다. 많은 데이터를 저장하며 자주 업데이트 되며 현재 데이터가 들어있다.
 - 데이터웨어하우스: 특수한 유형의 데이터베이스로 쿼리 및 보고에 최적화되어 분석 처리에 사용된다. 데이터베이스의 변경사항을 포함하는 기록 데이터가 들어있다.
+
+
+### | [정적쿼리 vs 동적쿼리](https://steemit.com/oracle/@ekkim/oracle)
+- 정적쿼리
+  - 고정된 SQL 형태를 만들어 사용 (일반적으로 작성된 SQL쿼리)
+  - Parsing 되면 Memory에 상주하면서 Shared
+    => Stored Procedure에 새로 캐싱되지 않아 재사용성 있음
+- 동적쿼리
+  - 입력값이나 변경 사항을 추가해 실행할 쿼리문을 문자열로 SQL 변수에 작성해 담아 만든 후 DBMS에서 콜
+  - 실행될 때마다 Parsing
+    => Stored Procedure를 생성할 때 새로 캐싱되어 재사용성 떨어뜨림
+
+![정적쿼리_동적쿼리_특징](https://github.com/sooyun429/TIL_2021/blob/master/DB/images/%EC%A0%95%EC%A0%81%EC%BF%BC%EB%A6%AC_%EB%8F%99%EC%A0%81%EC%BF%BC%EB%A6%AC_%ED%8A%B9%EC%A7%95.png?raw=true)
+
+- 참고링크:
+  - [https://kslee7746.tistory.com/](https://kslee7746.tistory.com/entry/Java-MVC-정적-쿼리-동적-쿼리)
+  - https://blackas119.tistory.com/38
+  - https://m.blog.naver.com/PostView.nhn?blogId=leeoh04&logNo=20111395137&proxyReferer=https:%2F%2Fwww.google.com%2F
