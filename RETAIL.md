@@ -11,6 +11,16 @@
 - EAN-13 바코드로 변환하려면 숫자값은 먼저 3개의 그룹으로 나뉜다. (첫 번째 숫자, 6개 숫자 한 그룹, 나머지 6개 숫자 한 그룹) 
 - 첫 번째 숫자가 0이면 첫 번째 그룹의 모든 여섯 개 숫자는 UPC에 쓰이는 패턴을 이용하여 부호화하므로 UPC 바코드는 첫 번째 숫자 집합이 0으로 된 EAN-13 바코드로도 된다.
 
+### 스크랩예정이란?
+- 재고가 많거나 한 경우 발주는 안 되고 판매만 가능한 운영 상태
+
+### PL(Private Label)
+- 롯데마트에서는 PB(Private Brand라고 함)
+
+### OEM / ODM
+- OEM(Original Equipment Manufacturing, 주문자 상표부착 생산)
+- ODM(Original Development Manufacturing, 주문자 개발 생산)
+
 ### 납입경로(발주경로): DC/TC/직납/크로스도킹
 
 - 직납: 본부 또는 점포에서 발주 후 협력회사에서 해당 점포에 바로 납품
@@ -22,6 +32,9 @@
 - DC/TC관련 기사: [1위 이마트 놔두고... 공정위, 'DC물류' 많은 롯데마트 먼저 칼댔다(190123_시장경제)](http://www.meconomynews.com/news/articleView.html?idxno=19946)
 - [DC/TC/크로스도킹 간단설명](https://linked2ev.github.io/ecommerce/2019/02/13/Ecommerce-news_20190213/)
 - [DC/TC 장단점 비교](https://m.blog.naver.com/PostView.nhn?blogId=zldzkfn&logNo=110032597630&proxyReferer=https:%2F%2Fwww.google.com%2F)
+- DC/TC 비교
+![TC DC PC_1](https://github.com/sooyun429/TIL_2021/blob/master/images/TC%20DC%20PC_1.jpg?raw=true)
+![TC DC PC_2](https://github.com/sooyun429/TIL_2021/blob/master/images/TC%20DC%20PC_2.jpg?raw=true)
 
 ### DPS/DAS/PAS 설명
 - https://m.blog.naver.com/jackshin01/221039015878
@@ -43,3 +56,7 @@
 - 바이어: 이마트에 투입되는 모든 상품과 가격을 결정하고, 신문 광고, 행사 대품 등 주요 행사에 대한 기획 및 결정, 매장 내 구현되는 ISP(Internet Secure Payment 일반결제서비스) 및 판매 방법에 대한 지침 관련 유관부서 협의 등의 업무를 담당. 이런 활동을 통해서 담당 분류의 매출액, 이익액 2가지 목표를 달성해야 함.
 - AS바이어/컨트롤러: 바이어가 상품에 대한 기획과 가격 결정에 업무가 집중되어 있다면 AS바이어는 재고 관리 및 매장의 요청사항 처리 등의 지원업무를 담당. 또한 오픈점, 리뉴얼 점포 레이아웃 및 진열 작업을 진행.
 [참고링크](http://www.educe.co.kr/company/jobinfo_view.php?sma_no=958&keyword=&search_txt2=)
+
+### SCM(Supply Chain Management, 공급망 관리)
+![SCM 흐름도](https://github.com/sooyun429/TIL_2021/blob/master/images/SCM%20%ED%9D%90%EB%A6%84%EB%8F%84.gif?raw=true)
+
