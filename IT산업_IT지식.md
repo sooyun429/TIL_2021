@@ -33,3 +33,10 @@
 
 - [ESB(Enterprise service bus)](https://m.blog.naver.com/PostView.nhn?blogId=cache798&logNo=130024626366&proxyReferer=https:%2F%2Fwww.google.com%2F):
   서비스들을 컴포넌트화된 논리적 집합으로 묶는 핵심 미들웨어이며, 비즈니스 프로세스 환경에 맞게 설계 및 전개할 수 있는 아키텍처 패턴. 다시 말해, ESB는 비즈니스 내에서 서비스, 애플리케이션, 자원을 연결하고 통합하는 미들웨어라 할 수 있으며, 이를 통해 분산된 서비스 컴포넌트를 쉽게 통합 연동할 수 있어 신뢰성 있는 메시지 통신이 가능함 [(위키백과 링크)](https://ko.wikipedia.org/wiki/엔터프라이즈_서비스_버스)
+  
+- GSLB(Global Server Load Balancing): 서버 간 부하 분산
+  - [Enterprise를 위한 GSLB(Global Server Load Balancing) - 1편: 개념 및 서비스 로직](https://www.netmanias.com/ko/post/blog/5620/dns-data-center-gslb-network-protocol/global-server-load-balancing-for-enterprise-part-1-concept-workflow)
+  - [Global server load balancing (GSLB) 다 쓰는 이유가 있는 구성](https://smashingpumpkins.tistory.com/entry/Global-server-load-balancing-GSLB-다-쓰는-이유가-있는-구성)
+
+
+- [ITSM (IT Service Management, IT 서비스 관리)](https://blog.naver.com/zacra/120195471150)
