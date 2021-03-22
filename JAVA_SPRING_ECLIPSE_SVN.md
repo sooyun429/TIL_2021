@@ -51,6 +51,11 @@
 - intValue(): Integer 객체에서 int형 값을 추출
 - parseInt(): String 객체에서 int형 값을 추출
 
+##### [컴파일러 번역과정]
+
+- 1. 형태소 분석 > 2. 구문 분석 > 3. 의미 분석 > 4. 중간 코드 > 5. 최적화 > 6. 물리 코드)
+- 4단계까지 컴파일러 사용, 5,6단계는 인터프리터 사용
+![자바 컴파일러 인터프리터](https://github.com/sooyun429/TIL_2021/blob/master/images/%EC%9E%90%EB%B0%94%20%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC%20%EC%9D%B8%ED%84%B0%ED%94%84%EB%A6%AC%ED%84%B0.png?raw=true)
 
 
 ## | SPRING
@@ -74,6 +79,15 @@
 
   - XML 파일 또는 Annotation을 통해 주문서를 작성하고, 주문서에 작성된 부품들을 담는 박스같은 개념
   - Dependency(부품)을 조립하거나 담아둘 떄 역순으로 진행
+
+##### [Dependency injection / Transaction management]
+- Java EE version에서 제공하는 기능인데 Spring으로 대체
+
+    | 명칭              | 내용                                                         |
+    | ----------------- | ------------------------------------------------------------ |
+    | Java EE -> Spring | 분산형, 기업형 응용 프로그램 개발을 위한 API<br />결합력을 낮추는 DI, DB **Transaction 처리**, 로그 처리 등의 기능을 지님 |
+    | Java SE           | 일반적인 로컬 응용 프로그램 개발을 위한 API<br />파일 I/O, 콘솔 I/O, 윈도우 I/O, 네트워크 I/O, Thread 등의 기능을 지님 |
+
 
 
 
