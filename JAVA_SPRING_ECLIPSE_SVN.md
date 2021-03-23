@@ -20,8 +20,7 @@
 - 상속이란 부모 클래스의 멤버를 자식 클래스에게 물려주는 것
 - 자식 클래스는 부모 클래스의 `private` 멤버를 제외한 나머지 멤버를 본인의 멤버처럼 사용할 수 있다.
 - 콜 되는 순서는 1) 부모 클래스의 생성자 2) 자식 클래스의 생성자 순
-- 접근제한자_protected
-  부모 클래스에서 protected로 선언된 멤버는 자식 클래스에서 상속 받아 public처럼 사용할 수 있다. 단, 본인 클래스 혹은 자식클래스 외의 장소에서 사용할 경우 해당 멤버는 private과 동일하게 동작한다.
+- 접근제한자_protected: 부모 클래스에서 protected로 선언된 멤버는 자식 클래스에서 상속 받아 public처럼 사용할 수 있다. 단, 본인 클래스 혹은 자식클래스 외의 장소에서 사용할 경우 해당 멤버는 private과 동일하게 동작한다.
 
 ![상속_접근제한자_protected](https://github.com/sooyun429/TIL_2021/blob/master/images/%EC%83%81%EC%86%8D_%EC%A0%91%EA%B7%BC%EC%A0%9C%ED%95%9C%EC%9E%90_protected.png?raw=true)
 
