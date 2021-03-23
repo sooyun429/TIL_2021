@@ -117,3 +117,113 @@ select * from all_views;
   - [https://kslee7746.tistory.com/](https://kslee7746.tistory.com/entry/Java-MVC-정적-쿼리-동적-쿼리)
   - https://blackas119.tistory.com/38
   - https://m.blog.naver.com/PostView.nhn?blogId=leeoh04&logNo=20111395137&proxyReferer=https:%2F%2Fwww.google.com%2F
+
+
+### | 서브쿼리
+- WITH절
+
+  - 특징:
+    - 동일한 SQL이 반복되어 사용될 때 성능을 높이기 위해 사용된다.
+    - 임시 테이블을 사용한다.
+    - 별칭으로 사용한 SELECT 문의 FROM 절에 다른 SELECT 구문의 별칭 참조가 가능하다.
+  - 장점:
+    - 동일한 구문을 한 번만 사용할 수 있다면 쿼리가 훨씬 간단해진다.
+    - 굳이 테이블을 생성하지 않고 임시 테이블을 사용해서 데이터를 엑세스하기 때문에 성능이 좋다.
+  - 유의점:
+    - 같은 시간에 여러 개의 WITH절을 돌리는 등 WITH절을 잘못 사용하는 경우 임시테이블이 견딜 수 있는 정도를 넘어서 다같이 처리 속도가 느려질 수 있다.
+  - 일반 서브 쿼리와 WITH절
+
+  ![SQL WITH절 설명](https://github.com/sooyun429/TIL_2021/blob/master/DB/images/SQL%20WITH%EC%A0%88%20%EC%84%A4%EB%AA%85.jpg?raw=true)
+
+  ```sql
+  --  기본 FORMAT
+  WITH 별칭1 AS (서브쿼리)
+     , 별칭2 AS (서브쿼리)
+  ...
+  SELECT ...
+  FROM 별칭1, 별칭2
+  ...
+  ```
+
+  ```sql
+  -- 적용예시 1 (기존쿼리)
+  SELECT b2.*
+    FROM ( SELECT period, region, sum(loan_jan_amt) jan_amt
+             FROM kor_loan_status
+         GROUP BY period, region
+          ) b2,
+          ( SELECT b.period,  MAX(b.jan_amt) max_jan_amt
+             FROM ( SELECT period, region, sum(loan_jan_amt) jan_amt
+                      FROM kor_loan_status
+                  GROUP BY period, region
+                  ) b,
+                  ( SELECT MAX(PERIOD) max_month
+                      FROM kor_loan_status
+                  GROUP BY SUBSTR(PERIOD, 1, 4)
+                  ) a
+             WHERE b.period = a.max_month
+          GROUP BY b.period
+          ) c
+     WHERE b2.period = c.period
+       AND b2.jan_amt = c.max_jan_amt
+  ORDER BY 1;
+  ```
+
+  ```sql
+  -- 적용예시 1 (수정쿼리)
+    WITH b AS ( SELECT period, region, sum(loan_jan_amt) jan_amt
+                  FROM kor_loan_status
+              GROUP BY period, region
+               ),
+         c AS ( SELECT b.period,  MAX(b2.jan_amt) max_jan_amt
+                  FROM b,
+                       ( SELECT MAX(PERIOD) max_month
+                           FROM kor_loan_status
+                       GROUP BY SUBSTR(PERIOD, 1, 4)
+                       ) a
+                 WHERE b.period = a.max_month
+              GROUP BY b.period
+               )
+    SELECT b.*
+      FROM b, c
+     WHERE b.period = c.period
+       AND b.jan_amt = c.max_jan_amt
+  ORDER BY 1;
+  ```
+
+  ```sql
+  -- 적용예시 2
+  WITH bicycle_rentals
+  AS (
+    SELECT COUNT(starttime) as num_trips,
+  	     EXTRACT(DATE from starttime) as trip_date
+      FROM `bigquery-public-data.new_york_citibike.citibike_trips`
+  GROUP BY trip_date
+  ),
+  	 rainy_days 
+  AS (
+    SELECT date,
+  	     (MAX(prcp) > 5) AS rainy
+  	FROM (
+  	  SELECT wx.date AS date,
+  	         IF (wx.element = 'PRCP', wx.value/10, NULL) AS prcp
+  	    FROM `bigquery-public-data.ghcn_d.ghcnd_2015` AS wx
+         WHERE wx.id = 'USW00094728'
+  	)
+  GROUP BY date
+  )
+  
+  SELECT ROUND(AVG(bk.num_trips)) AS num_trips,
+  	   wx.rainy
+    FROM bicycle_rentals AS bk
+    JOIN rainy_days AS wx9
+      ON wx.date = bk.trip_date
+  GROUP BY wx.rainy
+  ```
+
+  - 참고링크:
+    - https://logical-code.tistory.com/39
+    - https://thebook.io/006696/part01/ch07/02/
+    - https://superkong1.tistory.com/35
+
+
