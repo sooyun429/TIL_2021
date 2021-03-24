@@ -1,5 +1,39 @@
 ## [SQL_Oracle] PRACTICE
 
+### | SELECT, GROUPT BY, ORDER BY, ALIAS
+
+- The PADS(https://www.hackerrank.com/challenges/the-pads/problem)
+
+  ```sql
+  -- Oracle (Subquery 사용)
+  SELECT CONCAT(NAME, '(')||CONCAT(SUBSTR(OCCUPATION, 1, 1), ')') RESULT FROM OCCUPATIONS
+  ORDER BY NAME ASC;
+  
+  SELECT CONCAT('There are a total of ', CNT) || ' ' ||LOWER(OCCUPATION)|| 's.' RESULT FROM (
+      SELECT COUNT(OCCUPATION) CNT, OCCUPATION FROM OCCUPATIONS
+      GROUP BY OCCUPATION
+      ORDER BY CNT, OCCUPATION ASC) TEMP;
+  ```
+
+  ```sql
+  -- Oracle 간소화
+  SELECT NAME||'('||SUBSTR(OCCUPATION, 1, 1)||')' RESULT FROM OCCUPATIONS
+  ORDER BY NAME ASC;
+  
+  SELECT 'There are a total of '||COUNT(OCCUPATION)||' '||LOWER(OCCUPATION)||'s.' RESULT FROM OCCUPATIONS
+  GROUP BY OCCUPATION
+  ORDER BY COUNT(OCCUPATION), OCCUPATION ASC;
+  -- ORDER BY RESULT ASC;
+  -- RESULT로만 정렬해도 같은 결과 도출
+  
+  -- SELECT 'There are a total of '||(COUNT(OCCUPATION) AS CNT)||' '||LOWER(OCCUPATION)||'s.' RESULT FROM OCCUPATIONS
+  -- GROUP BY OCCUPATION
+  -- ORDER BY CNT, OCCUPATION ASC;
+  
+  -- -- line 1 error: ORA-00907: missing right parenthesis 
+  -- -- SELECT 항목이 결론적으로 1개인데, 중간에 alias 별도로 적용하는 것은 불가능함
+  ```
+
 ### | [JOIN](https://goddaehee.tistory.com/62)
 
 - https://www.hackerrank.com/challenges/challenges/problem?h_r=next-challenge&h_v=zen
