@@ -7,7 +7,7 @@
 --------------------------
 
 - [💻 SITE] [TCP SCHOOL - XML INTRO BASIC](http://tcpschool.com/xml/xml_intro_basic)
-- [🖥 SITE] [tcpschool - XML](http://tcpschool.com/xml/xml_xslt_template)
+- [💻 SITE] [TCP SCHOOL - XML](http://tcpschool.com/xml/xml_xslt_template)
 
 
 
