@@ -3,7 +3,7 @@
 #### [💻 LECTURE]
 
 - [JAVA 강의](https://www.youtube.com/watch?v=tvciu9_jHjQ&list=PLq8wAnVUcTFV4ZjRbyGnw6T1tgmYDLM3P)
-
+- [🖥 SITE] [w3schools - JAVA](https://www.w3schools.com/java/default.asp)
 
 
 #### [💥 ERROR]
@@ -76,6 +76,7 @@
 
 - [Framework 강의](https://www.youtube.com/watch?v=XtXHIDnzS9c&list=PLq8wAnVUcTFUHYMzoV2RoFoY2HDTKru3T)
 - [전자정부프레임워크 개발자 교육](https://www.egovframe.go.kr/EgovEduMovie.jsp?menu=4&submenu=3)
+- [🖥 SITE] [edwith - Spring](https://www.edwith.org/boostcourse-web-be/lecture/58969/)
 
 #### [개념정리]
 
