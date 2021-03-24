@@ -7,6 +7,7 @@
 --------------------------
 
 - [💻 SITE] [TCP SCHOOL - XML INTRO BASIC](http://tcpschool.com/xml/xml_intro_basic)
+- [🖥 SITE] [tcpschool - XML](http://tcpschool.com/xml/xml_xslt_template)
 
 
 
@@ -91,3 +92,6 @@
     2. 노드 트리를 연속적으로 탐색하여 접근하는 방법
 
     3. 노드 간의 관계를 이용하여 접근하는 방법
+
+
+##### [XML inputType과 dataType의 차이]
