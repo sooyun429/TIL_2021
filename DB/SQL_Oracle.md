@@ -1,6 +1,6 @@
 ## SQL_Oracle
 
-### | DB작성 기본
+### | DB작성 기본 
 ```sql
 -- DB Object
 
