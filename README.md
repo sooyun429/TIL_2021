@@ -9,7 +9,7 @@
 - [🖥 SITE] [AWS Cloud Practitioner(공인 클라우드 전문가) 자격증](https://github.com/yoonhok524/aws-certifications/tree/master/0.%20Cloud%20Practitioner)
 
 ### [OS]
-- [📖 BOOK] [운영체제(공룡책)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185475578&orderClick=LAG&Kc=)
+- [📖 BOOK] [운영체제(공룡책)](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791185475578&orderClick=LAG&Kc=)  
 
 ### [LINUX]
 - [🖥 SITE] [VI 명령어 포함](https://nuninaya.tistory.com/158)
