@@ -5,7 +5,7 @@
 - [편의점 가공식품, 유통기한 관리 안 되는 이유](https://www.thescoop.co.kr/news/articleView.html?idxno=25150)
 - [편의점 식품안전관리 ‘구멍’...유통기한 지난 곰팡이·변질 식품 판매 다반사](https://www.consumernews.co.kr/news/articleView.html?idxno=608347)
 - 바코드의 중요성
-- [Information-rich barcodes](http://justfooderp.com/blog/6-tools-for-better-shelf-life-management/)
+- [Information-rich barcodes](http://justfooderp.com/blog/6-tools-for-better-shelf-life-management/):
 One of the most useful tools for keeping your integrated software informed with real-time, accurate data are barcodes and scanners. With them you can achieve three things:
 Make your operation more efficient by reducing effort;
 Eliminate transcription errors;
