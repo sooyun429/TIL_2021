@@ -1,5 +1,19 @@
 ## RETAIL_물류유통
 
+### 유통기한 관리
+- 위생관리, 유통기한 관리 문제제기:
+- [편의점 가공식품, 유통기한 관리 안 되는 이유](https://www.thescoop.co.kr/news/articleView.html?idxno=25150)
+- [편의점 식품안전관리 ‘구멍’...유통기한 지난 곰팡이·변질 식품 판매 다반사](https://www.consumernews.co.kr/news/articleView.html?idxno=608347)
+- 바코드의 중요성
+- [Information-rich barcodes](http://justfooderp.com/blog/6-tools-for-better-shelf-life-management/)
+One of the most useful tools for keeping your integrated software informed with real-time, accurate data are barcodes and scanners. With them you can achieve three things:
+Make your operation more efficient by reducing effort;
+Eliminate transcription errors;
+Easily capture variables that are too hard to capture manually for every item (like expiry dates).
+- [QR코드(다이소 사례)](QR코드 계산법으로 아성다이소 물품 다양성을 엿보다)
+
+
+
 ### 대형마트 / 슈퍼 or SSM / 편의점 (오프라인 vs 온라인 중 오프라인으로 한정하여 논의하기로 한다.)
 - 슈퍼(또는 SSM)과 편의점의 차이는 가공(DRY)식품과 신선(WET)식품을 다루는지 등에 대한 차이로 나뉜다. (쉽게 말해, 저온냉장고 필요유무에 따라 나뉜다.)
 - 대형마트와 슈펴(또는 SSM)의 차이는 문화시설, 생활용품 등의 포함 유무에 따라 나뉜다.
