@@ -17,7 +17,7 @@
 ### PL(Private Label)
 - 롯데마트에서는 PB(Private Brand라고 함)
 
-### OEM / ODM
+### OEM / ODM 
 - OEM(Original Equipment Manufacturing, 주문자 상표부착 생산)
 - ODM(Original Development Manufacturing, 주문자 개발 생산)
 
