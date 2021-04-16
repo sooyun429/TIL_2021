@@ -67,6 +67,10 @@ select * from all_views;
 - SQL 문에서 ORDER BY 절을 사용하는 경우 그 뒤에 다른 절을 사용할 수 없다. 또한 표현식, alias 또는 열 위치를 정렬 조건으로 지정할 수 있다. NULLS FIRST 또는 NULLS LAST 키워드를 사용하여 반환된 행 중 null 값을 포함하는 행이 정렬 순서상 맨 처음에 나타나거나 마지막에 나타나도록 지정할 수 있다.
 - NULL 값은 오름차순에서 마지막에 표시되고, 내림차순에서 처음에 표시됨
 
+#### [LISTAGG]
+- 중복제거 및 컬럼 합칠 때 사용(오...)
+- [[Oracle] 오라클 LISTAGG 함수 사용법 (중복제거, 정렬, 컬럼 합치기)](https://gent.tistory.com/328)
+
 ### | [NULL값 처리](http://www.gurubee.net/lecture/1880)
 
 - NVL(column, value): 해당 컬럼이 null인 경우 입력한 value값으로 바꾸어 출력
