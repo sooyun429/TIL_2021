@@ -74,3 +74,8 @@ Easily capture variables that are too hard to capture manually for every item (l
 ### SCM(Supply Chain Management, 공급망 관리)
 ![SCM 흐름도](https://github.com/sooyun429/TIL_2021/blob/master/images/SCM%20%ED%9D%90%EB%A6%84%EB%8F%84.gif?raw=true)
 
+### QR코드
+- 관련 사이트
+  - [QR코드닷컴](https://www.qrcode.com/)
+  - [이노서티_메이크큐알](http://www.makeqr.kr/)
+
